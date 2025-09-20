@@ -1,0 +1,413 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Crossover Legends 🎀",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Moon 🌸",
+   ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local CharTab = Window:CreateTab("Characters 🌺", nil) -- Title, Image
+local AbilityTab = Window:CreateTab("Abilities ⭐", nil) -- Title, Image
+local OtherTab = Window:CreateTab("Other 🧸", nil) -- Title, Image
+
+local Section = CharTab:CreateSection("ִֶָ‧₊˚Characters & ₊˚ Skins⊹♡")
+
+local Button = CharTab:CreateButton({
+   Name = "Boa Hancock ‪‪❤️",
+   Callback = function()
+   local args = {
+    [1] = "BoaHancock"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Collector 🌙 ",
+   Callback = function()
+   local args = {
+    [1] = "TheCollector"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Eleven 🧠",
+   Callback = function()
+  local args = {
+    [1] = "Eleven"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Elsa ❄️",
+   Callback = function()
+   local args = {
+    [1] = "Elsa"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Klarion ♨️",
+   Callback = function()
+   local args = {
+    [1] = "Klarion"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Ursula 🦑",
+   Callback = function()
+   local args = {
+    [1] = "Ursula"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Morgana 🔮",
+   Callback = function()
+   local args = {
+    [1] = "Morgana"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Maleficent 🦚",
+   Callback = function()
+   local args = {
+    [1] = "Maleficent"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Atom Eve 🌸",
+   Callback = function()
+   local args = {
+    [1] = "AtomEve"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Black Bolt ⚡",
+   Callback = function()
+   local args = {
+    [1] = "BlackBolt"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "America Chavez 🌀",
+   Callback = function()
+   local args = {
+    [1] = "AmericaChavez"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Charles Xaivier 🧠",
+   Callback = function()
+   local args = {
+    [1] = "Charles Xaivier"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Circe ☘️",
+   Callback = function()
+   local args = {
+    [1] = "Circe"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Dark Seid 🗡️",
+   Callback = function()
+   local args = {
+    [1] = "DarkSeid"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Deku 🐸",
+   Callback = function()
+   local args = {
+    [1] = "Deku"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Doctor Strange 🎃",
+   Callback = function()
+   local args = {
+    [1] = "Doctor Strange"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Eclipsa 🦋",
+   Callback = function()
+   local args = {
+    [1] = "Eclipsa"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Emma Frost 💎",
+   Callback = function()
+   local args = {
+    [1] = "EmmaFrost"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Galactus 🤖",
+   Callback = function()
+   local args = {
+    [1] = "Galactus"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Hecate 🔮",
+   Callback = function()
+   local args = {
+    [1] = "Hecate"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Ice Man 🧊",
+   Callback = function()
+   local args = {
+    [1] = "IceMan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Infinity Ultron ♾️",
+   Callback = function()
+   local args = {
+    [1] = "InfinityUltron"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Invisible Woman 🌊",
+   Callback = function()
+   local args = {
+    [1] = "InvisibleWoman"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Kang 🧭",
+   Callback = function()
+   local args = {
+    [1] = "Kang"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Magik 🗡️",
+   Callback = function()
+   local args = {
+    [1] = "Magik"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Monica 🔘",
+   Callback = function()
+   local args = {
+    [1] = "Monica"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Pietro 👟",
+   Callback = function()
+   local args = {
+    [1] = "Pietro"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Poison Ivy 🌱",
+   Callback = function()
+   local args = {
+    [1] = "PoisonIvy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Polaris 🥦",
+   Callback = function()
+   local args = {
+    [1] = "Polaris"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Qetsiyah 🕯️",
+   Callback = function()
+   local args = {
+    [1] = "Qetsiyah"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Raiden Shogun ⛈️",
+   Callback = function()
+   local args = {
+    [1] = "RaidenShogun"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+local Button = CharTab:CreateButton({
+   Name = "Reed Richard",
+   Callback = function()
+   local args = {
+    [1] = "ReedRichard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangePlayerCharacter"):FireServer(unpack(args))
+   end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
